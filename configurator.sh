@@ -13,6 +13,9 @@ bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.
 y
 EOF
 x-ui << EOF
+8
+y
+
 6
 y
 $USERNAME
