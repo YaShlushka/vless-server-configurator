@@ -3,7 +3,7 @@ echo -e "$PASSWORD\n$PASSWORD" | passwd
 apt update && apt upgrade -y
 useradd -m -s /bin/bash "$USERNAME"
 echo "$USERNAME:$PASSWORD" | chpasswd
-/usr/sbin/usermod -aG sudo $USERNAME
+usermod -aG sudo $USERNAME
 sed -i "/#Port 22/c\Port $SSH_PORT" /etc/ssh/sshd_config
 sed -i "/PermitRootLogin/c\PermitRootLogin no" /etc/ssh/sshd_config
 systemctl restart sshd
