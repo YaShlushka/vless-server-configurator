@@ -1,0 +1,3 @@
+USERNAME="tokto"
+PASSWORD="ArsenyT2011981Kamaz"
+SSH_PORT="43982"
