@@ -7,8 +7,8 @@ usermod -aG sudo $USERNAME
 sed -i "/Port 22/c\Port $SSH_PORT" /etc/ssh/sshd_config
 sed -i "/PermitRootLogin/c\PermitRootLogin no" /etc/ssh/sshd_config
 systemctl restart sshd
-apt install git nmap net-tools curl sudo docker.io docker-compose openssl gnupg -y
-bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh) v2.9.4 << EOF
+apt install curl sudo gnupg -y
+bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh) v3.3.1 << EOF
 1
 4
 y
